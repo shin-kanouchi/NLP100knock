@@ -1,0 +1,18 @@
+79実行
+classias-train -tm  -g5 -x 76_output1.f 76_output2.f 76_output3.f 76_output4.f 76_output5.f
+
+結果例
+***** Iteration #148 *****
+Loss: 5210.35
+Feature L2-norm: 41.7872
+Error norm: 1.4249
+Active features: 150200 / 172688
+Line search trials: 1
+Line search step: 1
+Seconds required for this iteration: 0.02
+Accuracy: 0.8786 (4833/5501)
+Micro P, R, F1: 0.8786 (4833/5501), 0.8786 (4833/5501), 0.8786
+Macro P, R, F1: 0.8148, 0.5851, 0.6273
+
+L-BFGS terminated with the stopping criteria
+Seconds required: 2.9
