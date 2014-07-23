@@ -5,7 +5,6 @@ import sys
 
 y = int(sys.argv[2])
 list = []
-
 for line in open(sys.argv[1]):
 	list.append(line.strip())
 

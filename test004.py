@@ -12,13 +12,13 @@ for line2 in open(sys.argv[2]):
 	list2.append(line2.strip())
 
 if len(list1) != len(list2):
-  print >>sys.stderr, "Total lines are not same."
+	print >>sys.stderr, "Total lines are not same."
 
 for i in range(len(list1)):
 	print list1[i] + "	" + list2[i]
 
-"""
-    for a ,b in zip(list1,list2): ←zipで２つの配列をカップリングさせる
+"""for文は以下でも可
+    for a ,b in zip(list1,list2): #zipで２つの配列をカップリングさせる
 	print a +" "+b
 """
 

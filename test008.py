@@ -6,8 +6,8 @@ import sys
 def retest8_1():
 	list=[]
 	for line in open("address0.txt", "r"):
-		itemList = line.strip().split('\t')#itemList[0]と[1]がある
-		list.append(itemList)#listをlistに入れる
+		itemList = line.strip().split('\t')#itemList[0]と[1]を作る
+		list.append(itemList)#listをlistにappend
 	return list
 
 if __name__ == '__main__':
@@ -16,4 +16,3 @@ if __name__ == '__main__':
 	for i in range(len(list2)):
 			print list2[i][0]+"\t"+list2[i][1]
 
-	print "aa"
