@@ -1,0 +1,20 @@
+"cotton-roll" gingivitis|noun|128|base|1|E0000001|"cotton-roll" gingivitis|"cotton-roll" gingivitis
+"cotton-roll" gingivitides|noun|128|plur|8|E0000001|"cotton-roll" gingivitis|"cotton-roll" gingivitis
+"cotton-roll" gingivitis|noun|128|sing|512|E0000001|"cotton-roll" gingivitis|"cotton-roll" gingivitis
+2060 virus|noun|128|base|1|E0000010|2060 virus|2060 virus
+2060 viruses|noun|128|plur|8|E0000010|2060 virus|2060 virus
+2060 virus|noun|128|sing|512|E0000010|2060 virus|2060 virus
+3'-noncoding region|noun|128|base|1|E0000022|3'-noncoding region|3'-noncoding region
+3'-noncoding regions|noun|128|plur|8|E0000022|3'-noncoding region|3'-noncoding region
+3'-noncoding region|noun|128|sing|512|E0000022|3'-noncoding region|3'-noncoding region
+987P fimbria|noun|128|base|1|E0000045|987P fimbria|987P fimbria
+987P fimbriae|noun|128|plur|8|E0000045|987P fimbria|987P fimbria
+987P fimbria|noun|128|sing|512|E0000045|987P fimbria|987P fimbria
+A-1|noun|128|base|1|E0000046|A-1|A1
+A1|noun|128|base|1|E0000046|A1|A1
+A-1|noun|128|sing|512|E0000046|A-1|A1
+A1|noun|128|sing|512|E0000046|A1|A1
+AA|noun|128|base|1|E0000048|AA|AA
+AA's|noun|128|plur|8|E0000048|AA|AA
+AAs|noun|128|plur|8|E0000048|AA|AA
+AA|noun|128|sing|512|E0000048|AA|AA

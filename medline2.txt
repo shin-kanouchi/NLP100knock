@@ -1,0 +1,9 @@
+Acute respiratory distress syndrome (ARDS) and acute lung injury (ALI) are conditions associated with an estimated mortality of 40–50%.
+The use of inhaled vasodilators can help to improve oxygenation without hemodynamic effects.
+This article reviews relevant studies addressing the safety and efficacy of inhaled nitric oxide (iNO) and aerosolized epoprostenol (aEPO) in the treatment of life-threatening hypoxemia associated with ARDS and ALI.
+In addition, the article also provides a practicable guide to the clinical application of these therapies.
+Nine prospective randomized controlled trials were included for iNO reporting on changes in oxygenation or clinical outcomes.
+Seven reports of aEPO were examined for changes in oxygenation.
+Based on currently available data, the use of either iNO or aEPO is safe to use in patients with ALI or ARDS to transiently improve oxygenation.
+No differences have been observed in survival, ventilator-free days, or attenuation in disease severity.
+Further studies with consistent end points using standard delivery devices and standard modes of mechanical ventilation are needed to determine the overall benefit with iNO or aEPO.
