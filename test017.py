@@ -6,7 +6,7 @@ import re
 r = re.compile(u'([一-龥ぁ-んァ-ヴ]{1,5})さん')
 
 for line in open("tweet.txt"):
-	line = line.decode("utf-8")#デコードしてutf-8にして文字化けを防ぐ
+	line = line.decode("utf-8")#decodeしてutf-8にして文字化けを防ぐ
 	m = r.search(line)
 	if m:
 		print m.group(0)

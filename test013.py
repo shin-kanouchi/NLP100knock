@@ -25,8 +25,8 @@ def tweet_id_text_dict():
 
 def open_dict_RT(tweet_dict):
     re_hikousiki = re.compile(r"(.+) RT @")
-    for k, v in sorted(tweet_dict.items()):#defaultdictをkey順に展開
-        for v2 in v:#defaultdictの中のlistを展開
+    for k, v in sorted(tweet_dict.items()):#tweet_dictをkey順に展開
+        for v2 in v:#tweet_dictの中のlistを展開
             m = re_hikousiki.match(v2)
             if m == None:
                 pass
