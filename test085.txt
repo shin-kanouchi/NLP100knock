@@ -1,0 +1,5 @@
+> db.tweets.find({$query:{user:"170626372"}, $orderby:{freq_rted:1}}).limit(10)
+{ "_id" : ObjectId("53c48ef903a7ee5a6e1a8aa7"), "body" : "ウイトリ作画怪しい( ˘ω˘ )", "url" : "http://twitter.com/tttsg9p/status/485830086923280384", "freq_rted" : 0, "reply_url" : null, "rt_url" : null, "user" : "170626372", "date" : "Sun Jul 06 16:58:13 +0000 2014", "nickname" : "てん" }
+
+>db.tweets.find({"nickname" : "あやか"}).sort({'freq_rt':-1}).limit(10)
+{ "_id" : ObjectId("53c4b2e4fad19618ed3b7a4f"), "body" : "今寝たら負けなんだよ！知ってる。😶", "date" : "Sun Jul 06 16:58:12 +0000 2014", "rt_url" : "", "freq_rt" : 0, "user" : NumberLong("485830082707988481"), "url" : "https://twitter.com/ayakas_s/status/485830082707988481", "nickname" : "あやか", "reply_url" : "" }

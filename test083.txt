@@ -1,0 +1,3 @@
+
+> db.tweets.find({ url: "http://twitter.com/mirepiyo_berry/status/485830086889701376" })
+{ "_id" : ObjectId("53c48ef903a7ee5a6e1a8aa9"), "body" : "@seudish あかん記憶力鈍りまくっとる。", "url" : "http://twitter.com/mirepiyo_berry/status/485830086889701376", "freq_rted" : 0, "reply_url" : "http://twitter.com/seudish/status/485829854865014785", "rt_url" : null, "user" : "2437037989", "date" : "Sun Jul 06 16:58:13 +0000 2014", "nickname" : "✡ありり✡" }
