@@ -4,7 +4,6 @@
 import sys
 
 list1,list2= [],[]
-
 for line1 in open(sys.argv[1]):
 	list1.append(line1.strip()) #listの最後尾に入れる
 
