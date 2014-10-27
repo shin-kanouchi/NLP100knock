@@ -1,11 +1,10 @@
 #!/usr/bin/python
 #-*-coding:utf-8-*-
-"""(9) 各行を２コラム目，１コラム目の優先順位で辞書の逆順ソートしたもの（注意: 各行の内容は変更せずに並び替えよ）．確認にはsortコマンドを用いよ（この問題は結果が合わなくてもよい）．"""
+"""(9) 各行を２コラム目，１コラム目の優先順位で
+辞書の逆順ソートしたもの（注意: 各行の内容は変更せずに並び替えよ）．確認にはsortコマンドを用いよ（この問題は結果が合わなくてもよい）．"""
 import sys
-from test008 import *
+import test008 
 
-list = test8_1()
-list.sort(key=lambda x:(x[1],x[0]) ,reverse = True )
-
-for i in range(len(list)):
-	print list[i][0]+"\t"+list[i][1]
+list1 = test008.test008_1()
+for w1, w2 in sorted(list1, key=lambda x: (x[1], x[0]), reverse = True ):
+	print "%s\t%s" % (w1, w2)

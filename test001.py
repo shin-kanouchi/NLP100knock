@@ -6,4 +6,5 @@
 
 import sys
 print sum(1 for line in open(sys.argv[1]))
-
+"""標準入力はsys.stdin
+cat address.txt | python test001.py"""

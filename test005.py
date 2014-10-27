@@ -4,9 +4,9 @@
 import sys
 
 y = int(sys.argv[2])
-list = []
+list1 = []
 for line in open(sys.argv[1]):
-	list.append(line.strip())
+	list1.append(line.strip())
 
 for i in range(y):
-	print list[i]
+	print list1[i]
