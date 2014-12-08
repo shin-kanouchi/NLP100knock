@@ -2,7 +2,7 @@
 #-*-coding:utf-8-*-
 #2014/05/13 14:13:22 Shin Kanouchi
 """(13) 非公式RTのツイートの中で，RT先へのコメント部分のみを抽出せよ．"""
-import sys,re
+import sys, re
 from collections import defaultdict
 
 def tweet_id_text_dict():

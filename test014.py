@@ -3,7 +3,7 @@
 #2014/05/13 14:29:40 Shin Kanouchi
 """(14) ツイッターのユーザー名（@で始まる文字列）を抽出せよ．"""
 
-import sys,re
+import sys, re
 
 def tweet_user():
 	r = re.compile(r"(@[0-9a-zA-Z_]{1,15})")#宣言

@@ -5,7 +5,8 @@
 #表層形\t品詞,品詞細分類1,品詞細分類2,品詞細分類3,活用形,活用型,原形,読み,発音
 import re
 for line in open("japanese_tail10_MeCab.txt"):
-	if line.strip() != "EOS":
-		item = re.split(r"\t|,",line.strip())
-		if item[1] == "動詞":
-			print item[0]
+	if line.strip() == "EOS":
+		continue
+	item = re.split(r"\t|,",line.strip())
+	if item[1] == "動詞":
+		print item[0]

@@ -8,7 +8,7 @@ from collections import Counter
 def main():
 	dict={}
 	cnt = Counter()
-	f1 = open('test32_marshal_dict.txt','wb')
+	f1 = open('test032_Mdict.txt','wb')
 	for line in open('inflection.table.txt'):
 		itemList = line.strip().split('|')
 		if itemList[0] in dict:

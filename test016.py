@@ -5,5 +5,6 @@
 import re
 r = re.compile(r'([一-龥]+)\(([a-zA-Z]+)\)')
 for line in open("tweet.txt"):
-	if r.search(line):
-		print r.search(line).group(1) +"("+ r.search(line).group(2) +")"
+	m = r.search(line) 
+	if m:
+		print '%s(%s)' % (m.group(1), m.group(2))

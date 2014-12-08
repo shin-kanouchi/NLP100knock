@@ -4,10 +4,10 @@
 
 """(11) 「拡散希望」という文字列を含むツイートを抽出せよ．"""
 
-import sys,re
+import sys, re
 
 for line in open("tweet.txt"):
-    m = re.search('拡散希望',line)
+    m = re.search('拡散希望', line)
     line = line.strip()
     if m == None:
         pass

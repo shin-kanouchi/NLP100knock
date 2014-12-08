@@ -5,10 +5,11 @@
 one_sent = []
 import re
 for line in open("japanese_tail10_MeCab.txt"):
-	if line.strip() != "EOS":
-		item = re.split(r"\t|,",line.strip())
-		dict = {'surface':item[0], 'base' : item[7] ,'pos':item[1],'pos1':item[2]}
-		one_sent.append(dict)
+	if line.strip() == "EOS":
+		continue
+	item = re.split(r"\t|,",line.strip())
+	dict = {'surface':item[0], 'base' : item[7] ,'pos':item[1],'pos1':item[2]}
+	one_sent.append(dict)
 
 for d in one_sent:
 	for k,w in d.items():

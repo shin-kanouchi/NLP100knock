@@ -7,7 +7,7 @@ from collections import Counter
 
 def count_():
 	list=[]
-	for line in open('retest36.txt'):
+	for line in open('test036.txt'):
 		list.append(line.strip())
 	counter = Counter(list)
 	return counter

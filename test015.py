@@ -6,5 +6,6 @@ import sys,re
 
 r = re.compile(r"@([0-9a-zA-Z_]{1,15})")#宣言
 for line in open("tweet.txt"):
-	if r.search(line):
-		print re.sub('xxxxxx', r.search(line).group(1), r'<a href="https://twitter.com/#!/xxxxxxx">@xxxxxxx</a>')#xxxxxxxをm.group(1)に置換
+	m = r.search(line)
+	if m:
+		print re.sub('xxxxxx', m.group(1), r'<a href="https://twitter.com/#!/xxxxxxx">@xxxxxxx</a>')#xxxxxxxをm.group(1)に置換

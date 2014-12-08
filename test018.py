@@ -8,4 +8,4 @@ r = re.compile(u'([一-龥]{1,5}市)')
 for line in open("tweet.txt"):
 	m = r.search(line.decode("utf-8"))
 	if m :
-		print m.group(0)
+		print m.group(0).encode("utf-8")

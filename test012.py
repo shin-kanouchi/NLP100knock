@@ -4,7 +4,7 @@
 
 """(12) 「なう」という文字列で終わるツイートを抽出せよ．"""
 
-import sys,re
+import sys, re
 
 for line in open("tweet.txt"):
     line = line.strip()

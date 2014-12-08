@@ -6,9 +6,10 @@
 import re
 item_list = []
 for line in open("japanese_tail10_MeCab.txt"):
-	if line.strip() != "EOS":
-		item = re.split(r"\t|,",line.strip())
-		item_list.append(item)
-		i = len(item_list)-1
-		if i>1 and item_list[i-2][1]=="名詞" and item_list[i-1][0]=="の" and item_list[i][1]=="名詞":
-			print item_list[i-2][0],item_list[i-1][0], item_list[i][0]
+	if line.strip() == "EOS":
+		continue
+	item = re.split(r"\t|,", line.strip())
+	item_list.append(item)
+	i = len(item_list) - 1
+	if i>1 and item_list[i-2][1]=="名詞" and item_list[i-1][0]=="の" and item_list[i][1]=="名詞":
+		print item_list[i-2][0], item_list[i-1][0], item_list[i][0]

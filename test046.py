@@ -6,14 +6,15 @@
 import re
 list_meisi=[]
 for line in open("japanese_tail10_MeCab.txt"):
-	if line.strip() != "EOS":
-		item = re.split(r"\t|,",line.strip())
-		if item[1] == "名詞":
-			list_meisi.append(item[0])
-		elif len(list_meisi) > 1:
-			for meisi in list_meisi:
-				print meisi,
-			print ""
-			list_meisi=[]
-		else:
-			list_meisi=[]
+	if line.strip() == "EOS":
+		continue
+	item = re.split(r"\t|,",line.strip())
+	if item[1] == "名詞":
+		list_meisi.append(item[0])
+	elif len(list_meisi) > 1:
+		for meisi in list_meisi:
+			print meisi,
+		print ""
+		list_meisi=[]
+	else:
+		list_meisi=[]

@@ -6,7 +6,7 @@ import marshal
 
 def make_dict():
 	list=[]
-	f1 = open('test32_marshal_dict.txt','rb')
+	f1 = open('test032_Mdict.txt','rb')
 	for i in marshal.load(f1):
 		 list.append(i)
 	return list
