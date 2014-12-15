@@ -8,14 +8,14 @@
 digraph knock60{
 \t"" -> "";
 }"""
-def test60():
+def test060():
 	print "digraph knock60{"
-	for line in open("test57.txt"):
+	for line in open("test057.txt"):
 		item = line.replace('\"',r'\"')
-		item = item.strip().split(' ')
+		item = item.strip().split('\t')
 		print '\t"%s" -> "%s";' % (item[0],item[1])
 	print "}"
 
 
 if __name__ == '__main__':
-	test60()
+	test060()

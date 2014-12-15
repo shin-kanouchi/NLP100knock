@@ -5,9 +5,9 @@
 class Morph:
 	def __init__(self, surface, base, pos, pos1):
 		self.surface = surface
-		self.base = base
-		self.pos = pos
-		self.pos1 = pos1
+		self.base    = base
+		self.pos     = pos
+		self.pos1    = pos1
 
 def test52_morph():
 	import re
@@ -15,11 +15,11 @@ def test52_morph():
 	one_sent_list = []
 	for line in open("cabocha_japanese.txt"):
 		if "\t" in line:
-			item = re.split(r"\t|,",line.strip())
-			one_sent_list.append(Morph(item[0],item[7],item[1],item[2],))
+			item = re.split(r"\t|,", line.strip())
+			one_sent_list.append(Morph(item[0], item[7], item[1], item[2]))
 		elif "EOS" in line:
 			for item in one_sent_list:
-				print 'surface=%s\tbase=%s\tpos=%s\tpos1=%s' % (item.surface, item.base,item.pos,item.pos1)
+				print 'surface=%s\tbase=%s\tpos=%s\tpos1=%s' % (item.surface, item.base, item.pos, item.pos1)
 			all_sent_list.append(one_sent_list)
 			print "EOS"
 			one_sent_list = []
