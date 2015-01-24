@@ -3,6 +3,7 @@
 #2014/06/17 17:43:09 Shin Kanouchi
 """(67) 66の出力の各行を名詞句の（疎）ベクトルとみなし，「日本」と「我が国」のベクトル間の内積（コサイン類似度）を求めよ．"""
 from collections import defaultdict
+import sys
 
 def make_vector(open_file):
 	word_dict = defaultdict(list)
@@ -26,7 +27,9 @@ def calculate_vector(word_dict,argv1,argv2):
 	return str(i)
 
 if __name__ == '__main__':
-	import sys
-	assert len(sys.argv) > 2, "error : sys.argv[2] is not found"
-	word_dict = make_vector("66_output.txt")
-	print "ans= ",calculate_vector(word_dict,sys.argv[1],sys.argv[2])
+	for line in sys.stdin:
+		print line
+		imput_item = line.strip().split()
+		assert len(imput_item) == 2, "error : len(imput_item) is not 2"
+		word_dict = make_vector("66_output.txt")
+		print "ans= ",calculate_vector(word_dict,imput_item[0],imput_item[1])

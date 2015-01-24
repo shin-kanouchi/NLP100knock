@@ -16,7 +16,7 @@ def dist_two_class(class1,class2):
 	return cos_min
 
 
-def test70(argv1):
+def test070(argv1):
 	dict = defaultdict(lambda: 0)
 	word_set =set([])
 	for line in open("68_output.txt"):
@@ -26,30 +26,31 @@ def test70(argv1):
 		word_set.add(item[1])
 		word_set.add(item[2])
 
-	初期クラスの作成
+	#初期クラスの作成
 	class_list = []
+	word_dic = defaultdict(lambda: 0)
 	for word in word_set:
-		word = [word]
+		word_dic = [word]
 		class_list.append(word)
 
-	while len(class_list)>int(argv1):
+	while len(class_list) > int(argv1):
 		d_max = 0
 		best_class = tuple
 		for class1 in class_list:
 			for class2 in class_list:
 				if class1 != class2:
-					d = dist_two_class(class1,class2)
+					d = dist_two_class(class1, class2)
 					if d >= d_max:
 						d_max = d_max
-						best_class = (class1,class2)
-		class1,class2 = best_class[0],best_class[1]
-		class_list.append(best_class[0]+best_class[1])
+						best_class = (class1, class2)
+		class1,class2 = best_class[0], best_class[1]
+		class_list.append(best_class[0] + best_class[1])
 		class_list.remove(best_class[0])
 		class_list.remove(best_class[1])
 
 		print len(dict)
-		maxward1,maxward2 = max(dict.items(), key=lambda x:x[1])[0].split()
-		print maxward1,maxward2
+		maxward1, maxward2 = max(dict.items(), key=lambda x:x[1])[0].split()
+		print maxward1, maxward2
 		"""
 		for maxward in maxwards:
 			for word in ward_set:
@@ -62,4 +63,4 @@ def test70(argv1):
 
 if __name__ == '__main__':
 	import sys
-	test70(sys.argv[1])
+	test070(sys.argv[1])

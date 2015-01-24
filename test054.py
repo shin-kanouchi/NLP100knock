@@ -8,6 +8,17 @@
 from collections import defaultdict
 import re
 
+"""
+* 23 24D 0/1 1.373627
+機関	名詞,一般,*,*,*,*,機関,キカン,キカン
+に	助詞,格助詞,一般,*,*,*,に,ニ,ニ
+* 24 25D 1/2 0.697440
+成長	名詞,サ変接続,*,*,*,*,成長,セイチョウ,セイチョー
+し	動詞,自立,*,*,サ変・スル,連用形,する,シ,シ
+た	助動詞,*,*,*,特殊・タ,基本形,た,タ,タ
+EOS
+"""
+
 class Morph:
 	def __init__(self, surface, base, pos, pos1):
 		self.surface = surface

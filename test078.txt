@@ -1,2 +1,2 @@
 78実行
-kanouchi@fomalhaut:~$ cat 76_output1.f | classias-tag -m 77_model_2.txt -r > 78_output.txt
+cat 76_output1.f | classias-tag -m 77.model -r > 78_output.txt

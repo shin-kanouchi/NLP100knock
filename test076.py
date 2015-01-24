@@ -41,7 +41,7 @@ def make_fature(w, fatures,next_w,next_pos, hpos):#w,fatures,one_chunk.surface,o
 	f1.write('%s\n%s w[0]=%s hw=%s hpos=%s hw|hpos=%s|%s fw=%s fpos=%s fw|fpos=%s|%s w[-1]=%s pos[-1]=%s w[1]=%s pos[1]=%s\n' % (w,fatures.head_w,w_0,hw,hpos,hw,hpos,fw,fpos,fw,fpos,fatures.pre_w,fatures.pre_pos,next_w,next_pos))
 
 
-def test75(all_sent_list):
+def test075(all_sent_list):
 	for one_sent_list in all_sent_list:
 		w = ''
 		pre_w = "None"
@@ -68,7 +68,7 @@ def test75(all_sent_list):
 if __name__ == '__main__':
 	for name in glob.glob('71_GENIA_tagger_?.txt'):
 		f1= open("76_output"+name[-5]+".f",'w')
-		all_sent_list=test72(name)
-		test75(all_sent_list)
+		all_sent_list=test072(name)
+		test075(all_sent_list)
 		f1.close()
 

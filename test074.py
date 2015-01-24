@@ -33,5 +33,5 @@ def test74(all_sent_list):
 
 if __name__ == '__main__':
 	for name in glob.glob('71_GENIA_tagger_?.txt'):
-		all_sent_list=test72(name)
+		all_sent_list=test072(name)
 		test74(all_sent_list)

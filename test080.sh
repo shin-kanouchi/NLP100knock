@@ -10,4 +10,4 @@ python test080.py $word
 cat 80_output_genear_noun.f
 cat 80_output_genear_noun.f | classias-tag -m 77.model -r > 80_output_classias.txt
 cat 80_output_classias.txt
-python test80_compere.py 80_output_classias.txt $word
+python test080_compere.py 80_output_classias.txt $word

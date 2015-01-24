@@ -1,2 +1,2 @@
 77classias実行
-kanouchi@fomalhaut:~$ classias-train -tm -m 77_model_2.txt 76_output1.f 76_output2.f 76_output3.f 76_output4.f 76_output5.f
+classias-train -tm -m 77_model_2.txt 76_output1.f 76_output2.f 76_output3.f 76_output4.f 76_output5.f

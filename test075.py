@@ -40,7 +40,7 @@ def make_fature(w, fatures,next_w,next_pos, hpos):#w,fatures,one_chunk.surface,o
 	hw      = item[-1]#ok
 	print '%s\n%s\tw[0]=%s\thw=%s\thpos=%s\thw|hpos=%s|%s\tfw=%s\tfpos=%s\tfw|fpos=%s|%s\tw[-1]=%s\tpos[-1]=%s\tw[1]=%s\tpos[1]=%s' % (w,fatures.head_w,w_0,hw,hpos,hw,hpos,fw,fpos,fw,fpos,fatures.pre_w,fatures.pre_pos,next_w,next_pos)
 
-def test75(all_sent_list):
+def test075(all_sent_list):
 	for one_sent_list in all_sent_list:
 		w = ''
 		pre_w = "None"
@@ -64,5 +64,5 @@ def test75(all_sent_list):
 			pre_pos = one_chunk.pos
 
 if __name__ == '__main__':
-	all_sent_list=test72('71_GENIA_tagger_1.txt')
-	test75(all_sent_list)
+	all_sent_list=test072('71_GENIA_tagger_1.txt')
+	test075(all_sent_list)
